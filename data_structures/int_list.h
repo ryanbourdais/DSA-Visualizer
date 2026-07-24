@@ -9,6 +9,7 @@ typedef struct IntList {
 } IntList;
 
 void init_int_list(struct IntList *list);
+void seed_int_list(struct IntList *list);
 void append_int_list(struct IntList *list, int value);
 void insert_int_list(struct IntList *list, int value, int index);
 void remove_int_list_head(struct IntList *list);

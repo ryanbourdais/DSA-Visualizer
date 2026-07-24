@@ -14,6 +14,16 @@ void init_int_list(struct IntList *list)
     list->capacity = 4;
 }
 
+void seed_int_list(struct IntList *list)
+{
+    clear_int_list(list);
+
+    for(int value = 1; value <= 5; value++)
+    {
+        append_int_list(list,value);
+    }
+}
+
 void append_int_list(struct IntList *list, int value)
 {
     if (list->count == list->capacity)
@@ -139,7 +149,7 @@ bool contains_int_list(struct IntList *list, int value)
 
 int find_int_list(struct IntList *list, int value)
 {
-    for(size_t i = 0; i < list->count; i++)
+    for(int i = 0; i < list->count; i++)
     {
         if(list->items[i] == value)
         {

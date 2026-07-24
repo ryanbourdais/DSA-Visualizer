@@ -1,0 +1,26 @@
+{
+    "version": 4,
+    "configurations": [
+        {
+            "name": "Win32",
+            "compilerPath": "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx86/x64/cl.exe",
+            "intelliSenseMode": "windows-msvc-x64",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "windowsSdkVersion": "10.0.26100.0",
+            "includePath": [
+                "${workspaceFolder}",
+                "${workspaceFolder}/external",
+                "${workspaceFolder}/external/nuklear",
+                "${workspaceFolder}/data_structures",
+                "${workspaceFolder}/build-vcpkg-vs2022/_deps/glfw-src/include",
+                "C:/vcpkg-2026.03.18/installed/x64-windows/include"
+            ],
+            "defines": [
+                "WIN32",
+                "_WINDOWS",
+                "_DEBUG"
+            ]
+        }
+    ]
+}
